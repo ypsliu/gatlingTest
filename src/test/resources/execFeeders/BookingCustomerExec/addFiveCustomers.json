@@ -1,0 +1,114 @@
+{
+  "customers": [
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtff",
+        "middleName": "Adtmf",
+        "surname": "Adtsf"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId1}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    },
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtft",
+        "middleName": "Adtmt",
+        "surname": "Adtst"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId2}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    },
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtftr",
+        "middleName": "Adtmtr",
+        "surname": "Adtstr"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId3}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    },
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtffo",
+        "middleName": "Adtmfo",
+        "surname": "Adtsfo"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId4}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    },
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtffi",
+        "middleName": "Adtmfi",
+        "surname": "Adtsfi"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId5}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    }
+  ]
+}

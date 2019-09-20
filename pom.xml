@@ -1,46 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
-
-  <groupId>io.gatling</groupId>
-  <artifactId>gatling-maven-plugin-demo</artifactId>
-  <version>3.2.1</version>
+  <groupId>com.openjaw</groupId>
+  <artifactId>api-gatling-test</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <gatling.version>${project.version}</gatling.version>
-    <gatling-plugin.version>3.0.3</gatling-plugin.version>
-    <scala-maven-plugin.version>4.1.1</scala-maven-plugin.version>
+    <scala.version>2.12.8</scala.version>
+    <encoding>UTF-8</encoding>
+    <gatling.version>3.0.2</gatling.version>
+    <scala-maven-plugin.version>3.3.1</scala-maven-plugin.version>
+    <gatling-maven-plugin.version>3.0.1</gatling-maven-plugin.version>
+    <spec.version>main_release-0.196.1-20190708.091638-1</spec.version>
+    <fastjson.version>1.2.47</fastjson.version>
+    <commons-io.version>1.3.2</commons-io.version>
+    <commons-lang.version>2.6</commons-lang.version>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>openjaw-maven-public</id>
+      <url>http://nexus.aws.openjawtech.com:8081/repository/maven-public</url>
+    </repository>
+  </repositories>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.gatling.highcharts</groupId>
+        <artifactId>gatling-charts-highcharts</artifactId>
+        <version>${gatling.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.openjaw</groupId>
+        <artifactId>openjaw-api-spec</artifactId>
+        <version>${spec.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastjson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>${commons-lang.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
       <groupId>io.gatling.highcharts</groupId>
       <artifactId>gatling-charts-highcharts</artifactId>
-      <version>${gatling.version}</version>
-      <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.openjaw</groupId>
+      <artifactId>openjaw-api-spec</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+    </dependency>
+      <dependency>
+          <groupId>commons-lang</groupId>
+          <artifactId>commons-lang</artifactId>
+          <version>2.6</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
 
   <build>
     <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>net.alchim31.maven</groupId>
+          <artifactId>scala-maven-plugin</artifactId>
+          <version>${scala-maven-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>net.alchim31.maven</groupId>
         <artifactId>scala-maven-plugin</artifactId>
-        <version>${scala-maven-plugin.version}</version>
         <executions>
           <execution>
             <goals>
               <goal>testCompile</goal>
             </goals>
             <configuration>
-              <jvmArgs>
-                <jvmArg>-Xss100M</jvmArg>
-              </jvmArgs>
               <args>
                 <arg>-target:jvm-1.8</arg>
                 <arg>-deprecation</arg>
@@ -56,7 +131,16 @@
       <plugin>
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
-        <version>${gatling-plugin.version}</version>
+        <version>${gatling-maven-plugin.version}</version>
+        <configuration>
+          <runMultipleSimulations>true</runMultipleSimulations>
+          <includes>
+            <!-- curl -X POST localhost:8080/actuator/refresh -d {} -H "Content-Type: application/json" -->
+            <!-- Registry -->
+            <param>com.openjaw.api.gatling.test.simulation.ProfileSimulation</param>
+            <!--<param>com.openjaw.api.gatling.test.simulation.FlightBookingSimulation</param>-->
+          </includes>
+        </configuration>
       </plugin>
     </plugins>
   </build>

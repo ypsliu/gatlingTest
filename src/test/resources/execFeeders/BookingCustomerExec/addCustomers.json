@@ -1,0 +1,26 @@
+{
+  "customers": [
+    {
+      "age": 18,
+      "dateOfBirth": "2001-08-19",
+      "name": {
+        "firstName": "Adtf",
+        "middleName": "Adtm",
+        "surname": "Adts"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "products": [
+        "${productId}"
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "${docId}",
+        "docType": "PASSPORT",
+        "expiryDate": "2019-08-19",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    }
+  ]
+}

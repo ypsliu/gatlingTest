@@ -1,0 +1,2 @@
+originCode,destinationCode,departureDate,returnDate,passengerCounts,packageSearchType
+CITY_LON_GB,CITY_BJS_CN,0,5,1,oneway

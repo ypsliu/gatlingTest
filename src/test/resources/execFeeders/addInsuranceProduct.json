@@ -1,0 +1,10 @@
+{
+  "resultSetId": "resultSetId",
+  "results": [
+    {
+      "customerId": 1,
+      "quantity": 1,
+      "resultId": "1"
+    }
+  ]
+}

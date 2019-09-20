@@ -1,0 +1,9 @@
+{
+  "resultSetId": "${mealResultId}",
+  "specialServiceRequests": [
+    {
+      "customerId": 1,
+      "resultId": "${freemealProductId}"
+    }
+  ]
+}

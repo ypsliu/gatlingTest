@@ -1,7 +1,9 @@
 package gatling.scenario
 
-import gatling.exec.AuthenticationExec
-import io.gatling.core.Predef.scenario
+import gatling.exec._
+import io.gatling.core.Predef._
+
+import scala.concurrent.duration._
 
 object LoginScenario {
 
@@ -11,5 +13,4 @@ object LoginScenario {
         AuthenticationExec.login
       )
   }
-
 }

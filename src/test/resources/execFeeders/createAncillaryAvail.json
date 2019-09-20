@@ -1,0 +1,7 @@
+{
+  "ancillaryType": "MEAL",
+  "flightProductIds": [
+    "${mealProductId}"
+  ],
+  "flightSegmentId": 1
+}

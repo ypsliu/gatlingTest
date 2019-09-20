@@ -1,0 +1,18 @@
+{
+  "apptype": "${apptype}",
+  "bankid": "${bankid}",
+  "billno": "${billno}",
+  "bookingId": "${bookingId}",
+  "lan": "${lan}",
+  "msg": "${msg}",
+  "ordercurtype": "${ordercurtype}",
+  "orderno": "${orderno}",
+  "ordertype": "${ordertype}",
+  "orgid": "${orgid}",
+  "payamount": "${payamount}",
+  "paydate": "${paydate}",
+  "paystatus": "${paystatus}",
+  "paytime": "${paytime}",
+  "returntype": "${returntype}",
+  "signature": "${signature}"
+}

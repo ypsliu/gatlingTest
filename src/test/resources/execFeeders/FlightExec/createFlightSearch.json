@@ -1,0 +1,28 @@
+{
+  "bounds": [
+    {
+      "departureDate": "${departureDate}",
+      "destination": {
+        "locationByCode": {
+          "code": "${destination}",
+          "context": "IATA"
+        }
+      },
+      "origin": {
+        "locationByCode": {
+          "code": "${origin}",
+          "context": "IATA"
+        }
+      }
+    }
+  ],
+  "cabinClass": "ECONOMY",
+  "currencyCode": "CNY",
+  "maxConnections": 0,
+  "passengerCounts": [
+    {
+      "count": "${passengerCounts}",
+      "passengerType": "ADT"
+    }
+  ]
+}

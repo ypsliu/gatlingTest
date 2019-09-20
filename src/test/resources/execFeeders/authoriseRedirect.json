@@ -1,0 +1,4 @@
+{
+  "bankId": "EASYPAY",
+  "bookingId": "${bookingId}"
+}

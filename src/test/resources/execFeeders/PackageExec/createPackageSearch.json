@@ -1,0 +1,47 @@
+{
+  "currencyCode": "CNY",
+  "origin": {
+    "locationByCode": {
+      "code": "${origin}",
+      "context": "LOCATION_ID"
+    }
+  },
+  "destination": {
+    "locationByCode": {
+      "code": "${destination}",
+      "context": "LOCATION_ID"
+    }
+  },
+  "flight": {
+    "cabinClass": "ECONOMY",
+    "departureDate": "${localStartDate}",
+    "maxConnections": 0,
+    "returnDate": "${localEndDate}"
+  },
+  "hotel": {
+    "checkinDate": "${localStartDate}",
+    "checkoutDate": "${localEndDate}",
+    "rooms": [
+      {
+        "adults": 1,
+        "children": [
+          {
+            "age": 10
+          }
+        ]
+      }
+    ]
+  },
+  "passengerCounts": [
+    {
+      "count": 1,
+      "passengerType": "ADT"
+    },
+    {
+      "count": 1,
+      "passengerType": "CHD"
+    }
+  ],
+  "packageSearchType":"${packageSearchType}",
+  "switchSell": false
+}

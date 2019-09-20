@@ -1,0 +1,2 @@
+﻿startDate,endDate,flightSegmentId,departureDate,destination,origin,cabinClass,passengerCounts,flightType,returnDate
+30,0,2,10,HAK,PEK,ECONOMY,1,OneWay,

@@ -1,0 +1,2 @@
+addressline,addresscity,addresscountrycode,addresscountryname,addresspostcode,addressstate,addressstreetnmbr,contactemail,contactfirstname,contactmiddlename,contactsurname,contacttitle,contactphoneareacode,contactphonecountrycode,contactphonenumber,contactphonetype
+teststreet,Beijing,CN,China,101300,Peking,10,Liqiu.zhang@openjawtech.com,first,middle,surname,MRS,5,86,13622222222,MOBILE

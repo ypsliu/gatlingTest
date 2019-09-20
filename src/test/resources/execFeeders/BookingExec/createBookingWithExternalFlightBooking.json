@@ -1,0 +1,6 @@
+{
+  "purchaseRequest": {
+    "reservationId": "${reservationId}",
+    "resultSetId": "${resultSetId}"
+  }
+}

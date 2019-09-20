@@ -1,0 +1,24 @@
+{
+  "customers": [
+    {
+      "age": "29",
+      "dateOfBirth": "1990-08-08",
+      "name": {
+        "firstName": "YUE",
+        "surname": "WU"
+      },
+      "packages": [
+        {
+          "id": "${packageId}",
+        "products": ["${flightproductId}","${hotelproductId}"
+        ]
+      }
+      ],
+      "passengerType": "ADT",
+      "travelDocument": {
+        "docId": "GD123123",
+        "docType": "PASSPORT"
+      }
+    }
+  ]
+}

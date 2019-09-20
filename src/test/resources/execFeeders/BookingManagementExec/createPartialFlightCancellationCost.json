@@ -1,0 +1,11 @@
+{
+  "customerPartialFlightReferences": [
+    {
+      "customerId": 1,
+      "flightSegmentIds": [
+        "1"
+      ]
+    }
+  ],
+  "refundRemarksId": "${refundRemarksId}"
+}

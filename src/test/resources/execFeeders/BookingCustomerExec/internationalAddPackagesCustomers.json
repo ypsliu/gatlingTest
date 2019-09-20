@@ -1,0 +1,30 @@
+{
+  "customers": [
+    {
+      "dateOfBirth": "1990-08-08",
+      "gender": "MALE",
+      "name": {
+        "firstName": "qiu",
+        "surname": "qiu",
+        "title": "qiu"
+      },
+      "nationality": "CN",
+      "passengerType": "ADT",
+      "packages": [
+        {
+          "id": "${packageId}",
+        "products": ["${flightproductId}","${hotelproductId}"
+        ]
+      }
+      ],
+      "travelDocument": {
+        "country": "CN",
+        "docId": "GD123123",
+        "docType": "PASSPORT",
+        "expiryDate": "2990-08-08",
+        "gender": "MALE",
+        "nationality": "CN"
+      }
+    }
+  ]
+}

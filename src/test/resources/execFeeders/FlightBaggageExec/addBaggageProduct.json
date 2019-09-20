@@ -1,0 +1,10 @@
+{
+  "resultSetId": "${baggageResultId}",
+  "results": [
+    {
+      "customerId": 1,
+      "priceId": 0,
+      "resultId": "2"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "ancillaries": [
+    {
+      "customerId": 1,
+      "priceId": 0,
+      "quantity": 1,
+      "resultId": "${chargeablemealProductId}"
+    }
+  ],
+  "resultSetId": "${mealResultId}"
+}

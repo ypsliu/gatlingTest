@@ -1,0 +1,8 @@
+{
+  "carExtrasIds": [
+  ],
+  "hotelExtrasIds": [
+  ],
+  "packageId": "${package_OptionsId}",
+  "resultSetId": "${package_resultSetId}"
+}

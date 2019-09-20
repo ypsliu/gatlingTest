@@ -1,0 +1,5 @@
+{
+  "priceId": "${priceId}",
+  "resultId": "${flightId}",
+  "resultSetId": "${resultSetId}"
+}

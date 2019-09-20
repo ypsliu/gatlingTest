@@ -1,0 +1,31 @@
+{
+  "bounds": [
+    {
+      "daysAfter": 1,
+      "daysBefore": 2,
+      "departureDate": "${departureDate}",
+      "destination": {
+        "locationByCode": {
+          "code": "PEK",
+          "context": "IATA"
+        }
+      },
+      "origin": {
+        "locationByCode": {
+          "code": "HAK",
+          "context": "IATA"
+        }
+      }
+    }
+  ],
+  "cabinClass": "ECONOMY",
+  "currencyCode": "CNY",
+  "maxConnections": 0,
+  "passengerCounts": [
+    {
+      "count": 1,
+      "passengerType": "ADT"
+    }
+  ],
+  "redemption": false
+}

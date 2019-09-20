@@ -1,0 +1,4 @@
+{
+  "authenticationType": "${authenticationType}",
+  "mobile": "${mobile}"
+}

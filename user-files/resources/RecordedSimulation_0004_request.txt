@@ -1,0 +1,5 @@
+{
+  "loginType": "USERNAME",
+  "password": "string",
+  "user": "string"
+}

@@ -1,0 +1,11 @@
+{
+  "seatAssignments": [
+    {
+      "customerId": "${customerId}",
+      "rowNumber": "${rowNumber}",
+      "seatMapId": "${seatMapId}",
+      "seatNumber": "${seatNumber}"
+    }
+  ],
+  "seatMapResponseId": "${seatMapResponseId}"
+}

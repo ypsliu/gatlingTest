@@ -1,0 +1,28 @@
+{
+  "bounds": [
+    {
+      "departureDate": "2019-09-14",
+      "destination": {
+        "locationByCode": {
+          "code": "PEK",
+          "context": "IATA"
+        }
+      },
+      "origin": {
+        "locationByCode": {
+          "code": "FOC",
+          "context": "IATA"
+        }
+      }
+    }
+  ],
+  "cabinClass": "ECONOMY",
+  "currencyCode": "CNY",
+  "maxConnections": 0,
+  "passengerCounts": [
+    {
+      "count": 1,
+      "passengerType": "ADT"
+    }
+  ]
+}

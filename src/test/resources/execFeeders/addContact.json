@@ -1,0 +1,30 @@
+{
+  "address": {
+    "addressLines": [
+      "test street"
+    ],
+    "city": "Beijing",
+    "country": {
+      "code": "CN",
+      "name": "China"
+    },
+    "postCode": "101300",
+    "state": "Peking",
+    "streetNmbr": "10"
+  },
+  "email": "Liqiu.zhang@openjawtech.com",
+  "name": {
+    "firstName": "ContactF",
+    "middleName": "ContactM",
+    "surname": "ContactS",
+    "title": "MRS"
+  },
+  "phones": [
+    {
+      "areaCode": "0",
+      "countryCode": "23",
+      "number": "13883051149",
+      "phoneType": "MOBILE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "documentId": "${flightTicketNumber}",
+  "documentType": "FLIGHT_TICKET",
+  "name": {
+    "firstName": "${firstname}",
+    "middleName": "${middleName}",
+    "surname": "${surname}",
+    "title": "${title}"
+  },
+  "smsAuthentication": {
+    "authCode": "${authCode}",
+    "mobile": "${mobile}"
+  }
+}
